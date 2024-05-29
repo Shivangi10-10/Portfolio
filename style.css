@@ -5,12 +5,10 @@ body {
     color: white;
     transition: background-color 0.3s, color 0.3s;
 }
-
 body.light-mode {
     background-color: white;
     color: black;
 }
-
 .Navbar {
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
@@ -27,21 +25,17 @@ body.light-mode {
     padding: 20px 40px;
     transition: background-color 0.3s;
 }
-
 body.light-mode .Navbar {
     background-color: rgba(255, 255, 255, 0.8);
 }
-
 .Navbar .logo {
     flex-shrink: 0;
 }
-
 .Navbar .nav-links {
     display: flex;
     align-items: center;
     flex-grow: 0.1;
 }
-
 .Navbar a {
     color: white;
     text-decoration: none;
@@ -49,17 +43,14 @@ body.light-mode .Navbar {
     padding: 5px 10px;
     transition: all 0.3s ease;
 }
-
 body.light-mode .Navbar a {
     color: black;
 }
-
 .Navbar a:hover {
     background-color: white;
     color: black;
     border-radius: 5px;
 }
-
 .Navbar .download-button {
     display: flex;
     align-items: center;
@@ -70,17 +61,14 @@ body.light-mode .Navbar a {
     margin-left: 10px;
     transition: all 0.3s ease;
 }
-
 .Navbar .download-button i {
     margin-right: 5px;
 }
-
 .Navbar .download-button:hover {
     background-color: black;
     color: white;
     border: 2px solid white;
 }
-
 .Navbar .theme-toggle {
     background: none;
     border: none;
@@ -90,15 +78,12 @@ body.light-mode .Navbar a {
     margin-left: 10px;
     transition: color 0.3s;
 }
-
 body.light-mode .Navbar .theme-toggle {
     color: black;
 }
-
 .content {
     padding: 100px 20px;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .Navbar {
@@ -125,7 +110,6 @@ body.light-mode .Navbar .theme-toggle {
         margin-top: 5px;
     }
 }
-
 @media (max-width: 480px) {
     .Navbar {
         padding: 20px;
@@ -135,7 +119,6 @@ body.light-mode .Navbar .theme-toggle {
         margin: 3px 0;
     }
 }
-
 /* Centering the typewriter text */
 .typewriter-container {
     display: flex;
@@ -147,6 +130,7 @@ body.light-mode .Navbar .theme-toggle {
 
 .typewriter h1 {
     overflow: hidden;
+    border-right: .15em solid #FFFDD0;
     border-right: .15em solid #d8bcab;
     white-space: nowrap;
     margin: 0;
@@ -157,6 +141,7 @@ body.light-mode .Navbar .theme-toggle {
 
 .static-text {
     font-size: 2.5em;
+    color: #FFFDD0;
     color: #1e3c72;
     margin-top: 10px;
 }
@@ -168,6 +153,7 @@ body.light-mode .Navbar .theme-toggle {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
+    50% { border-color: #FFFDD0}
     50% { border-color: #d8bcab}
 }
 
@@ -180,7 +166,6 @@ body.light-mode .Navbar .theme-toggle {
     overflow: hidden;
     pointer-events: none; 
 }
-
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +173,6 @@ body.light-mode .Navbar .theme-toggle {
     overflow-y: auto; /* Ensure scrolling */
     padding: 20px 0;
 }
-
 .project-card {
     flex: 1 1 calc(50% - 40px); /* Responsive layout for 2 cards per row */
     background-color: #333;
@@ -197,11 +181,9 @@ body.light-mode .Navbar .theme-toggle {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
-
 .project-card:hover {
     transform: translateY(-10px);
 }
-
 @media (max-width: 768px) {
     .project-card {
         flex: 1 1 calc(100% - 40px); /* Single column on small screens */
@@ -252,41 +234,4 @@ body.light-mode {
 /* Light Mode Contact Text */
 body.light-mode #contact {
     color: black; /* Change text color in light mode */
-}
-
-.slider {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-top: 40px;
-}
-
-.slider.swiper-slide {
-    font-size: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.slider.swiper-slide-active {
-    transform: translateY(0);
-}
-
-.slider.swiper-slide-prev,.slider.swiper-slide-duplicate-prev {
-    transform: translateY(50%);
-}
-
-.slider.swiper-slide-next,.slider.swiper-slide-duplicate-next {
-    transform: translateY(-50%);
-}
-
-.slider.swiper-slide-before-prev {
-    transform: translateY(100%);
-}
-
-.slider.swiper-slide-after-next {
-    transform: translateY(-100%);
-}
-
-.inner {
-    width: 1088px;
-    margin: 0 auto;
-    padding-top: 80px;
 }
