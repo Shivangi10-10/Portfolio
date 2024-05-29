@@ -147,7 +147,7 @@ body.light-mode .Navbar .theme-toggle {
 
 .typewriter h1 {
     overflow: hidden;
-    border-right: .15em solid #FFFDD0;
+    border-right: .15em solid #d8bcab;
     white-space: nowrap;
     margin: 0;
     letter-spacing: .15em;
@@ -157,7 +157,7 @@ body.light-mode .Navbar .theme-toggle {
 
 .static-text {
     font-size: 2.5em;
-    color: #FFFDD0;
+    color: #1e3c72;
     margin-top: 10px;
 }
 
@@ -168,7 +168,7 @@ body.light-mode .Navbar .theme-toggle {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #FFFDD0}
+    50% { border-color: #d8bcab}
 }
 
 #particle-container {
@@ -206,4 +206,50 @@ body.light-mode .Navbar .theme-toggle {
     .project-card {
         flex: 1 1 calc(100% - 40px); /* Single column on small screens */
     }
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+    font-size: 3em;
+    font-weight: 800;
+    background: linear-gradient(to right, #1e3c72, #2a5298, #b06ab3, #b06ab3, #b06ab3, #2a5298, #1e3c72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Navbar and other styles remain unchanged */
+
+/* Contact Section Styles */
+#contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #c84977; /* Change color on hover */
+}
+
+/* Light Mode Contact Text */
+body.light-mode #contact {
+    color: black; /* Change text color in light mode */
 }
