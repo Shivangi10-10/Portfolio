@@ -51,7 +51,7 @@ styleSheet.innerText = `
         position: absolute;
         width: 10px;
         height: 10px;
-        background-color: #FFFDD0;
+        background-color: #b06ab3;
         border-radius: 50%;
         pointer-events: none;
         transform: translate(-50%, -50%);
@@ -66,3 +66,4 @@ styleSheet.innerText = `
     }
 `;
 document.head.appendChild(styleSheet);
+
