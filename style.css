@@ -253,3 +253,40 @@ body.light-mode {
 body.light-mode #contact {
     color: black; /* Change text color in light mode */
 }
+
+.slider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+
+.slider.swiper-slide {
+    font-size: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slider.swiper-slide-active {
+    transform: translateY(0);
+}
+
+.slider.swiper-slide-prev,.slider.swiper-slide-duplicate-prev {
+    transform: translateY(50%);
+}
+
+.slider.swiper-slide-next,.slider.swiper-slide-duplicate-next {
+    transform: translateY(-50%);
+}
+
+.slider.swiper-slide-before-prev {
+    transform: translateY(100%);
+}
+
+.slider.swiper-slide-after-next {
+    transform: translateY(-100%);
+}
+
+.inner {
+    width: 1088px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
