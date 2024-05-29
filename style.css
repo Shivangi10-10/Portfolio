@@ -1,14 +1,20 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Background color for the entire page */
-    color: white; /* Text color for the entire page */
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
 }
 
 .Navbar {
     backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
-    border: 2px solid rgba(255,255,255,0.18);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     width: 100%;
     top: 0;
@@ -16,22 +22,36 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     display: flex;
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 20px; /* Increased vertical padding */
-    padding-left: 40px;
+    padding: 20px 40px;
+    transition: background-color 0.3s;
+}
+
+body.light-mode .Navbar {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .Navbar .logo {
-    margin-right: 800px; /* Add some space between the logo and the links */
+    flex-shrink: 0;
+}
+
+.Navbar .nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.1;
 }
 
 .Navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 5px 10px;
     transition: all 0.3s ease;
+}
+
+body.light-mode .Navbar a {
+    color: black;
 }
 
 .Navbar a:hover {
@@ -40,8 +60,43 @@ body {
     border-radius: 5px;
 }
 
+.Navbar .download-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.Navbar .download-button i {
+    margin-right: 5px;
+}
+
+.Navbar .download-button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.Navbar .theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+body.light-mode .Navbar .theme-toggle {
+    color: black;
+}
+
 .content {
-    padding: 80px 20px; /* Adjusted padding to accommodate taller navbar */
+    padding: 80px 20px;
 }
 
 /* Responsive Design */
@@ -54,8 +109,20 @@ body {
     .Navbar .logo {
         margin: 0 0 10px 0; 
     }
+    .Navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
     .Navbar a {
         margin: 5px 0;
+    }
+    .Navbar .download-button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .Navbar .theme-toggle {
+        margin-left: 0;
+        margin-top: 5px;
     }
 }
 
