@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <div class="loading">
+        <div class="loading__container">
+            <div class="loading__ring loading__ring--orange"></div>
+            <div class="loading__ring loading__ring--green"></div>
+            <div class="loading__ring loading__ring--blue"></div>
+        </div>
+    </div>
     <div class="Navbar">
         <div class="logo">
             <a href="#">Shivangi Suyash</a>
@@ -28,37 +36,52 @@
         <section id="about">
             <div class="typewriter-container">
                 <div class="typewriter">
-                    <h1>Hi, I am Shivangi Suyash</h1>
+                    <h1 class="gradient-text">Hi, I am Shivangi Suyash</h1>
                 </div>
                 <h2 class="static-text">A web developer!</h2>
+               
             </div>
             <div id="particle-container"></div>
+            
         </section>
         <section id="projects">
             <h1>Projects</h1>
             <div class="project-container">
                 <div class="project-card">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1</p>
+                    <h2>The Timeliner</h2>
+                    <p>A centralized platform for tracking coding competitions and hackathons.</p>
                 </div>
                 <div class="project-card">
-                    <h2>Project 2</h2>
-                    <p>Description of Project 2</p>
+                    <h2>ECOM AR</h2>
+                    <p>AR-based e-commerce application, addressing the limitations of traditional online shopping by introducing virtual product trials</p>
                 </div>
                 <div class="project-card">
-                    <h2>Project 3</h2>
-                    <p>Description of Project 3</p>
+                    <h2>Homeless Heart</h2>
+                    <p>Platform helping stray animals and helps in finding volunteers to take care of animals</p>
                 </div>
                 <div class="project-card">
-                    <h2>Project 4</h2>
-                    <p>Description of Project 4</p>
+                    <h2>PDF Merger</h2>
+                    <p>Merges all pdfs present in folder into one single pdf.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Code Editor</h2>
+                    <p>Allows user to run html,css and js code one one platform</p>
+                </div>
+                <div class="project-card">
+                    <h2>Image Editor</h2>
+                    <p>Edits all image in one go that are present in same folder</p>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>This is the contact section.</p>
-        </section>
+        <div class="container">
+            <section id="contact">
+              <h1>Contact</h1>
+              <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: Noida, Uttar Pradesh</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:shivangism1925@gmail.com">shivangisuyash8@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shivangi-suyash-05a484259/" target="_blank">Shivangi Suyash</a></p>
+              </div>
+            </section>
     </div>
     <script src="script.js"></script>
 </body>
