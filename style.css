@@ -321,5 +321,12 @@ body.light-mode #contact {
     overflow: hidden;
     pointer-events: none; 
 }
+/* Default styles (light mode) */
+body .logo img {
+    filter: brightness(0);
+}
 
-
+/* Dark mode specific styles */
+body.dark-mode .logo img {
+    filter: brightness(0) invert(1);
+}
