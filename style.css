@@ -255,6 +255,8 @@ body.light-mode #contact {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top:40px ;
+    padding-bottom: 80px;
 }
 
 .about-image img {
@@ -464,3 +466,46 @@ body.dark-mode .icon-text {
     filter: none; /* Ensure SVG colors are not affected */
 }
 
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+}
+
+#projects {
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust width of each card */
+    margin-right: 20px; /* Adjust spacing between cards */
+    scroll-snap-align: start;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-text-line{
+  font-size:40px;
+}
+
+.scroll-text{
+    color: grey;
+}
