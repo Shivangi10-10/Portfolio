@@ -1,211 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.scss">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
-</head>
-<body>
-    <div class="loading">
-        <div class="loading__container">
-            <div class="loading__ring loading__ring--orange"></div>
-            <div class="loading__ring loading__ring--green"></div>
-            <div class="loading__ring loading__ring--blue"></div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
+    </head>
+    <body>
+        <div class="loading">
+            <div class="loading__container">
+                <div class="loading__ring loading__ring--orange"></div>
+                <div class="loading__ring loading__ring--green"></div>
+                <div class="loading__ring loading__ring--blue"></div>
+            </div>
         </div>
-    </div>
-    <div class="Navbar">
-        <div class="logo">
-            <img src="logo.gif" alt="Shivangi Suyash Logo" height="50px" width="50px">
+        <div class="Navbar">
+            <div class="logo">
+                <img src="logo.gif" alt="Shivangi Suyash Logo" height="50px" width="50px">
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#tech-stack">Tech Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="D:\portfolio_final/Shivangi Suyash.pdf" class="download-button" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#tech-stack">Tech Stack</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="D:\portfolio_final/Shivangi Suyash.pdf" class="download-button" download>
-                <i class="fas fa-download"></i> Download Resume
-            </a>
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </div>
-    <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <div class="typewriter-container">
-                    <div class="typewriter">
-                        <h1 class="gradient-text">Hi, I am Shivangi Suyash</h1>
-                        <center><h2 class="static-text">A passionate web crafter!</h2></center>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <div class="typewriter-container">
+                        <div class="typewriter">
+                            <center><h2>About Me <img src="abc.gif" alt="section" height="50px" width="50px"></h2></center>
+                            <br>
+                            <h1 class="gradient-text">Hi, I am Shivangi Suyash</h1>
+                            <center><h2 class="static-text">A passionate web crafter!</h2></center>
+                        </div>
+                    </div>
+                    <div class="scroll-text">
+                        <center><span class="scroll-text-line">I am a passionate and skilled web developer.</span>
+                        <span class="scroll-text-line">With a keen interest in problem-solving and a strong command of analytical skills,</span>
+                        <span class="scroll-text-line">I excel in finding unique solutions to any challenge.</span>
+                        <span class="scroll-text-line">Travelling really makes me happy.</span></center>
                     </div>
                 </div>
-                <div class="scroll-text">
-                    <center><span class="scroll-text-line">I am a passionate and skilled web developer.</span>
-                    <span class="scroll-text-line">With a keen interest in problem-solving and a strong command of analytical skills,</span>
-                    <span class="scroll-text-line">I excel in finding unique solutions to any challenge.</span>
-                    <span class="scroll-text-line">Travelling really makes me happy.</span></center>
-                  </div>
-            </div>
-            <div class="about-image">
-                <img src="homepage.png" alt="Shivangi Suyash">
-            </div>
-        </div>
-        <div id="particle-container"></div>
-    </section>
-    <section id="tech-stack">
-        <section class="design-section">
-            <h2>Tech Stacks</h2>
-            <div class="timeline">
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">HTML</h3>
-                    <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML Icon" width="40" height="40">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">CSS</h3>
-                    <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS Icon" width="40" height="40">
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">JavaScript</h3>
-                    <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript Icon" width="40" height="40">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">Express.js</h3>
-                    <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="Express.js Icon" width="40" height="40">
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">React.js</h3>
-                    <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React.js Icon" width="40" height="40">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">Node.js</h3>
-                    <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js Icon" width="40" height="40">
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">PHP</h3>
-                    <img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" alt="PHP Icon" width="40" height="40">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">Firebase</h3>
-                    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase Icon" width="40" height="40">
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">Flutter SDK</h3>
-                    <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter SDK Icon" width="40" height="40">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">Dart</h3>
-                    <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="Dart Icon" width="40" height="40">
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-empty"></div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">MongoDB</h3>
-                    <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB Icon" width="40" height="40" style="margin-left: 10px;">
-                </div>
-                <div class="timeline-component timeline-content">
-                    <h3 style="display: inline-block;">MySQL</h3>
-                    <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="MySQL Icon" width="60" height="60" style="margin-right: 10px;">
+                <div class="about-image">
+                    <img src="homepage.png" alt="Shivangi Suyash">
                 </div>
             </div>
+            <div id="particle-container"></div>
         </section>
-    </section>
-    
-    
-    </section>
-    
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project-container">
-                <div class="project-card">
-                    <h2>Project 1</h2>
-                    <p>Description of Project 1</p>
-                    <h2>The Timeliner</h2>
-                    <p>A centralized platform for tracking coding competitions and hackathons.</p>
+        <section id="tech-stack">
+            <section class="design-section">
+                <h2>Tech Stacks<img src="abc.gif" alt="section" height="50px" width="50px"></h2>
+                <div class="timeline">
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">HTML</h3>
+                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">CSS</h3>
+                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">JavaScript</h3>
+                        <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">Express.js</h3>
+                        <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="Express.js Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">React.js</h3>
+                        <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React.js Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">Node.js</h3>
+                        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node.js Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">PHP</h3>
+                        <img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" alt="PHP Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">Firebase</h3>
+                        <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">Flutter SDK</h3>
+                        <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter SDK Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">Dart</h3>
+                        <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="Dart Icon" width="40" height="40">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">MongoDB</h3>
+                        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB Icon" width="40" height="40" style="margin-left: 10px;">
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3 style="display: inline-block;">MySQL</h3>
+                        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="MySQL Icon" width="60" height="60" style="margin-right: 10px;">
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h2>ECOM AR</h2>
-                    <p>AR-based e-commerce application, addressing the limitations of traditional online shopping by introducing virtual product trials</p>
-                </div>
-                <div class="project-card">
-                    <h2>Project 2</h2>
-                    <p>Description of Project 2</p>
-                    <h2>Homeless Heart</h2>
-                    <p>Platform helping stray animals and helps in finding volunteers to take care of animals</p>
-                </div>
-                <div class="project-card">
-                    <h2>Project 3</h2>
-                    <p>Description of Project 3</p>
-                    <h2>PDF Merger</h2>
-                    <p>Merges all pdfs present in folder into one single pdf.</p>
-                </div>
-                <div class="project-card">
-                    <h2>Project 4</h2>
-                    <p>Description of Project 4</p>
-                    <h2>Code Editor</h2>
-                    <p>Allows user to run html,css and js code one one platform</p>
-                </div>
-                <div class="project-card">
-                    <h2>Image Editor</h2>
-                    <p>Edits all image in one go that are present in same folder</p>
-                </div>
-            </div>
-        </section>
-        <div class="container">
-            <section id="contact">
-              <h1>Contact</h1>
-              <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> Address: Noida, Uttar Pradesh</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:shivangism1925@gmail.com">shivangisuyash8@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shivangi-suyash-05a484259/" target="_blank">Shivangi Suyash</a></p>
-              </div>
             </section>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        </section>
+        
+        
+        </section>
+        
+            <section id="projects">
+                <center><h2>Projects <img src="abc.gif" alt="section" height="50px" width="50px"></h2></center>
+                <div class="project-container">
+                    <div class="project-card">
+                        <h2>Project 1</h2>
+                        <p>Description of Project 1</p>
+                        <h2>The Timeliner</h2>
+                        <p>A centralized platform for tracking coding competitions and hackathons.</p>
+                    </div>
+                    <div class="project-card">
+                        <h2>ECOM AR</h2>
+                        <p>AR-based e-commerce application, addressing the limitations of traditional online shopping by introducing virtual product trials</p>
+                    </div>
+                    <div class="project-card">
+                        <h2>Project 2</h2>
+                        <p>Description of Project 2</p>
+                        <h2>Homeless Heart</h2>
+                        <p>Platform helping stray animals and helps in finding volunteers to take care of animals</p>
+                    </div>
+                    <div class="project-card">
+                        <h2>Project 3</h2>
+                        <p>Description of Project 3</p>
+                        <h2>PDF Merger</h2>
+                        <p>Merges all pdfs present in folder into one single pdf.</p>
+                    </div>
+                    <div class="project-card">
+                        <h2>Project 4</h2>
+                        <p>Description of Project 4</p>
+                        <h2>Code Editor</h2>
+                        <p>Allows user to run html,css and js code one one platform</p>
+                    </div>
+                    <div class="project-card">
+                        <h2>Image Editor</h2>
+                        <p>Edits all image in one go that are present in same folder</p>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <section id="contact">
+                <h1>Contact <img src="abc.gif" alt="section" height="50px" width="50px"></h1>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Address: Noida, Uttar Pradesh</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:shivangism1925@gmail.com">shivangisuyash8@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shivangi-suyash-05a484259/" target="_blank">Shivangi Suyash</a></p>
+                </div>
+                </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
