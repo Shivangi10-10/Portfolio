@@ -78,21 +78,3 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     document.head.appendChild(styleSheet);
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const scrollTextLines = document.querySelectorAll(".scroll-text-line");
-    let isWhite = true;
-
-    window.addEventListener("scroll", function() {
-        scrollTextLines.forEach(line => {
-            if (isWhite) {
-                line.classList.add("highlight-white");
-                line.classList.remove("highlight-black");
-            } else {
-                line.classList.add("highlight-black");
-                line.classList.remove("highlight-white");
-            }
-            isWhite = !isWhite;
-        });
-    });
-});
