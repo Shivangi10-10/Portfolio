@@ -80,48 +80,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const body = document.body;
-    const currentTheme = localStorage.getItem("theme");
+    const scrollTextLines = document.querySelectorAll(".scroll-text-line");
+    let isWhite = true;
 
-    // Function to toggle theme and update UI
-    function toggleTheme() {
-        body.classList.toggle("light-mode");
-        const themeToggleBtn = document.getElementById("theme-toggle");
-        if (body.classList.contains("light-mode")) {
-            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
-        } else {
-            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
-        }
-        // Save theme preference to local storage
-        localStorage.setItem("theme", body.classList.contains("light-mode") ? "light-mode" : "dark-mode");
-        // Update text color based on the theme
-        updateTextColor();
-    }
-
-    // Apply initial theme and update UI
-    if (currentTheme) {
-        body.classList.add(currentTheme);
-        updateTextColor();
-    }
-
-    // Add click event listener to theme toggle button
-    const themeToggleBtn = document.getElementById("theme-toggle");
-    themeToggleBtn.addEventListener("click", toggleTheme);
-
-    // Function to update text color based on theme
-    function updateTextColor() {
-        const scrollTextLines = document.querySelectorAll('.scroll-text-line');
+    window.addEventListener("scroll", function() {
         scrollTextLines.forEach(line => {
-            if (body.classList.contains("light-mode")) {
-                line.classList.add('scroll-text-light');
-                line.classList.remove('scroll-text-dark');
+            if (isWhite) {
+                line.classList.add("highlight-white");
+                line.classList.remove("highlight-black");
             } else {
-                line.classList.add('scroll-text-dark');
-                line.classList.remove('scroll-text-light');
+                line.classList.add("highlight-black");
+                line.classList.remove("highlight-white");
             }
+            isWhite = !isWhite;
         });
-    }
-
-    // Update text color based on the current theme
-    updateTextColor();
+    });
 });
