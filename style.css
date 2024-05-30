@@ -419,3 +419,48 @@ body.dark-mode img[alt="section"] {
 body.light-mode img[alt="section"] {
     filter: brightness(0);
 }
+
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Ensure the gif image color changes based on the mode */
+#contact h1 img {
+    filter: brightness(0) invert(1); /* Dark mode: make gif visible */
+}
+
+body.light-mode #contact h1 img {
+    filter: brightness(0); /* Light mode: make gif visible */
+}
+
+/* Align icons and text properly */
+.icon-links {
+    display: flex;
+    justify-content: space-around; /* Evenly distribute items */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    gap: 20px; /* Increased space between items */
+}
+
+.icon-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 8px; /* Space between icon and text */
+    color: inherit; /* Ensure text color changes with mode */
+}
+
+/* Light Mode Styles */
+body.light-mode .icon-text {
+    color: black !important; /* Dark text color for light mode */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .icon-text {
+    color: white !important; /* Light text color for dark mode */
+}
+
+/* Ensure SVG icons retain their original colors */
+.icon-text img {
+    filter: none; /* Ensure SVG colors are not affected */
+}
+
