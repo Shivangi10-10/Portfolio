@@ -411,3 +411,11 @@ body.dark-mode .logo img {
     background-color: white;
     color: black;
 }
+
+body.dark-mode img[alt="section"] {
+    filter: brightness(0) invert(1);
+}
+
+body.light-mode img[alt="section"] {
+    filter: brightness(0);
+}
